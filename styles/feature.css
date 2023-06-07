@@ -1,0 +1,308 @@
+.feature {
+  width: 1920px;
+  height: 1406px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feature__header {
+  font-family: "Rubik";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+  text-align: left;
+  position: absolute;
+  top: 134px;
+  left: 371px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.feature__description {
+  font-family: "Rubik";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.36000001430511475px;
+  text-align: left;
+  color: #ffffff;
+  position: absolute;
+  top: 134px;
+  right: 438px;
+  width: 546px;
+}
+
+.feature__line {
+  width: 1180px;
+  height: 1px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 253px;
+  left: 370px;
+}
+
+.feature-content__header {
+  font-family: "Rubik";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  top: 370px;
+  left: 408px;
+  color: #ffffff;
+}
+
+.feature-content__description {
+  font-family: "Rubik";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  top: 431px;
+  left: 408px;
+  color: #ffffff;
+  width: 700px;
+}
+
+.feature-content__img {
+  position: absolute;
+  top: 301px;
+  right: 551px;
+}
+
+.feature-speed__header {
+  font-family: "Rubik";
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  top: 699px;
+  left: 410px;
+  color: #ffffff;
+}
+
+.feature-speed__description {
+  font-family: "Rubik";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  top: 758px;
+  left: 410px;
+  color: #ffffff;
+  width: 320px;
+}
+
+.feature-speed__img {
+  position: absolute;
+  top: 707px;
+  left: 738px;
+}
+
+.feature-data__header {
+  font-family: "Rubik";
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  top: 743px;
+  left: 1030px;
+  color: #ffffff;
+}
+
+.feature-data__description {
+  font-family: "Rubik";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  top: 802px;
+  left: 1030px;
+  color: #ffffff;
+  width: 380px;
+}
+
+.feature-data__img {
+  position: absolute;
+  top: 640px;
+  right: 350px;
+}
+
+.feature-vpn__header {
+  font-family: "Rubik";
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  position: absolute;
+  top: 1123px;
+  left: 405px;
+}
+
+.feature-vpn__description {
+  font-family: "Rubik";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  position: absolute;
+  top: 1182px;
+  left: 405px;
+  width: 620px;
+}
+
+.feature-vpn__img {
+  position: absolute;
+  top: 1033px;
+  left: 1033px;
+}
+
+.feature-data__mobile-img {
+  display: none;
+}
+
+.feature-speed__mobile-img {
+  display: none;
+}
+
+.feature-vpn__mobile-img {
+  display: none;
+}
+
+@media screen and (max-width: 1350px) {
+  .feature {
+    width: 360px;
+    height: 1828px;
+    position: relative;
+    margin-top: 920px;
+  }
+
+  .feature__header {
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 28px;
+    width: max-content;
+  }
+
+  .feature__description {
+    top: 158px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    width: 330px;
+    text-align: center;
+  }
+
+  .feature-content__img {
+    top: 267px;
+    left: 29px;
+  }
+
+  .feature-content__header {
+    top: 548px;
+    left: 29px;
+    font-size: 24px;
+  }
+
+  .feature-content__description {
+    top: 596px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    width: 330px;
+  }
+
+  .feature-data__img {
+    display: none;
+  }
+
+  .feature-data__mobile-img {
+    display: block;
+    position: absolute;
+    top: 705px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .feature-data__header {
+    top: 1006px;
+    left: 30px;
+    font-size: 24px;
+  }
+
+  .feature-data__description {
+    top: 1054px;
+    left: 30px;
+    font-size: 20px;
+    width: 300px;
+  }
+
+  .feature-speed__img {
+    display: none;
+  }
+
+  .feature-speed__mobile-img {
+    display: block;
+    position: absolute;
+    top: 1141px;
+    right: 30px;
+  }
+
+  .feature-speed__header {
+    top: 1291px;
+    left: 30px;
+    font-size: 24px;
+  }
+
+  .feature-speed__description {
+    top: 1339px;
+    left: 30px;
+    font-size: 20px;
+  }
+
+  .feature-vpn__img {
+    display: none;
+  }
+
+  .feature-vpn__mobile-img {
+    display: block;
+    position: absolute;
+    top: 1471px;
+    left: 30px;
+  }
+
+  .feature-vpn__header {
+    top: 1726px;
+    left: 30px;
+    font-size: 24px;
+  }
+
+  .feature-vpn__description {
+    top: 1774px;
+    left: 30px;
+    font-size: 20px;
+    width: 300px;
+  }
+
+  .feature__line {
+    display: none;
+  }
+}

@@ -1,0 +1,148 @@
+.footer {
+  width: 1920px;
+  height: 320px;
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-spaceman-background {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: 15;
+  transform: translateX(-50%);
+}
+
+.footer-background {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer__left-info {
+  position: absolute;
+  left: 371px;
+  top: 148px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 2121;
+}
+
+.footer__left-info__item {
+  font-family: "Rubik";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.footer__right-info {
+  position: absolute;
+  right: 370px;
+  top: 148px;
+  color: #ffffff;
+  z-index: 214;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__right-info__item {
+  font-family: "Rubik";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: right;
+  color: #ffffff;
+}
+
+.footer__bottom-info {
+  font-family: "Rubik";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-mobile-backgorund,
+.footer-mobile-spaceman {
+  display: none;
+}
+
+@media screen and (min-width: 1940px) {
+  .footer-background {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .footer {
+    width: 360px;
+    height: 600px;
+  }
+
+  .footer-spaceman-background,
+  .footer-background {
+    display: none;
+  }
+
+  .footer-mobile-backgorund {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .footer-mobile-spaceman {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .footer__left-info {
+    top: 128px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer__right-info {
+    top: 354px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+
+    text-align: center;
+  }
+
+  .footer__left-info__item {
+    font-size: 17px;
+    color: #c7c7cc;
+    font-weight: 500;
+  }
+
+  .footer__right-info__item {
+    text-align: center;
+    font-size: 17px;
+    color: #c7c7cc;
+  }
+
+  .footer__bottom-info {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 12px;
+    width: max-content;
+    font-size: 15px;
+    color: #c7c7cc;
+  }
+}

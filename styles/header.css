@@ -1,0 +1,90 @@
+.header {
+  height: 70px;
+  z-index: 1000;
+  width: 1917px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header-logo {
+  position: absolute;
+  top: 27px;
+  left: 380px;
+}
+
+.header-text {
+  height: 70px;
+  position: absolute;
+  left: 933px;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.header-text__item {
+  font-family: "Rubik";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.header-download {
+  width: 135px;
+  height: 40px;
+  background: linear-gradient(
+    263.98deg,
+    #2b0e7b 0%,
+    #718df9 46.08%,
+    #45ddc2 100%
+  );
+  position: absolute;
+  right: 367px;
+  display: grid;
+  top: 15px;
+}
+
+.header-download::before {
+  content: "DOWNLOAD";
+  font-family: "Rubik";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: auto auto;
+  color: #ffffff;
+}
+
+.header-download:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    263.98deg,
+    #341689 0%,
+    #7189e2 46.08%,
+    #4845dd 100%
+  );
+}
+
+@media screen and (max-width: 1350px) {
+  .header {
+    width: 360px;
+    height: 70px;
+  }
+
+  .header-text {
+    display: none;
+  }
+
+  .header-download {
+    right: 29px;
+    top: 15px;
+  }
+
+  .header-logo {
+    top: 16px;
+    left: 26px;
+  }
+}

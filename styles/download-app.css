@@ -1,0 +1,95 @@
+.download-app {
+  width: 1920px;
+  height: 728px;
+  position: relative;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.download-app__header {
+  font-family: "Rubik";
+  font-size: 38px;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 53px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  top: 40px;
+  left: 370px;
+  text-transform: uppercase;
+}
+
+.download-app__description {
+  font-family: "Rubik";
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  position: absolute;
+  top: 147px;
+  left: 370px;
+  color: #ffffff;
+  width: 430px;
+}
+
+.download-app__qr {
+  position: absolute;
+  top: 273px;
+  left: 370px;
+}
+
+.download-app__phone {
+  position: absolute;
+  top: 38px;
+  z-index: 2;
+  left: 1227px;
+}
+
+.download-app__ipad {
+  position: absolute;
+  top: 223px;
+  left: 796px;
+}
+
+.download-app__modile-phone {
+  display: none;
+}
+
+.download-app__mobile-ipad {
+  display: none;
+}
+
+@media screen and (max-width: 1350px) {
+  .download-app {
+    width: 360px;
+    height: 819px;
+  }
+
+  .download-app__header {
+    font-size: 28px;
+    top: 55px;
+    left: 32px;
+  }
+
+  .download-app__phone,
+  .download-app__ipad,
+  .download-app__qr,
+  .download-app__description {
+    display: none;
+  }
+
+  .download-app__modile-phone {
+    display: block;
+    position: absolute;
+    top: 213px;
+    right: 68px;
+  }
+
+  .download-app__mobile-ipad {
+    display: block;
+    position: absolute;
+    top: 173px;
+    left: 70px;
+  }
+}

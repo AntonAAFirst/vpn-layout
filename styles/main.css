@@ -1,0 +1,219 @@
+.main {
+  position: relative;
+  width: 1920px;
+  height: 800px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.background {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+
+.earth {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.space-station {
+  left: 150px;
+  position: absolute;
+  z-index: 20;
+}
+
+.spaceman {
+  position: absolute;
+  right: 19%;
+  z-index: 20;
+  top: 180px;
+}
+
+.main__header {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  position: absolute;
+  line-height: 46px;
+  top: 240px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  width: 968px;
+  z-index: 30;
+  text-align: center;
+}
+
+.main__line {
+  width: 510px;
+  height: 1px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 452px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main__description {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.38px;
+  position: absolute;
+  top: 471px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+}
+
+.main-buttons {
+  height: 65px;
+  width: 908px;
+  position: absolute;
+  top: 643px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 40px;
+}
+
+.main-buttons__button {
+  background: linear-gradient(
+    263.98deg,
+    #2b0e7b 0%,
+    #718df9 46.08%,
+    #45ddc2 100%
+  );
+  position: relative;
+  width: 196px;
+  height: 65px;
+  cursor: pointer;
+}
+
+.main-buttons__button:hover {
+  background: linear-gradient(
+    263.98deg,
+    #341689 0%,
+    #7189e2 46.08%,
+    #4845dd 100%
+  );
+}
+
+.main-buttons__button-svg {
+  position: absolute;
+  left: 42px;
+  top: 19px;
+}
+
+.main-buttons__button-text {
+  position: absolute;
+  left: 36.76%;
+  right: 41.82%;
+  top: 29.23%;
+  width: 100px;
+  bottom: 52.31%;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ffffff;
+}
+
+.main-buttons__button-store {
+  position: absolute;
+  width: 100px;
+  left: 36.76%;
+  right: 21.42%;
+  top: 44.62%;
+  bottom: 29.23%;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.modile-spaceman,
+.mobile-background,
+.mobile-earth {
+  display: none;
+}
+
+@media screen and (min-width: 1940px) {
+  .background {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .main {
+    width: 360px;
+    z-index: 700;
+    height: 70px;
+    z-index: 500;
+    position: relative;
+  }
+
+  .background,
+  .earth,
+  .space-station,
+  .spaceman {
+    display: none;
+  }
+
+  .modile-spaceman,
+  .mobile-background,
+  .mobile-earth {
+    display: block;
+  }
+
+  .modile-spaceman {
+    position: absolute;
+    top: 488px;
+    left: 259px;
+  }
+
+  .mobile-background,
+  .mobile-earth {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+
+  .main__header {
+    top: 160px;
+    width: 300px;
+    font-size: 22px;
+    line-height: 25.3px;
+  }
+
+  .main__line {
+    top: 394px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+  }
+
+  .main__description {
+    top: 409px;
+    font-size: 20px;
+    width: 350px;
+  }
+
+  .main-buttons {
+    top: 528px;
+    z-index: 800;
+    flex-direction: row;
+    width: 200px;
+    flex-wrap: wrap;
+  }
+}
